@@ -31,10 +31,6 @@ body {
     font-family: var(--font-padrao);
 }
 
-a.externo::after {
-    content: '\0020\1F517';
-}
-
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -59,6 +55,7 @@ header > p {
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 0px #0000002f;
 }
 
@@ -134,6 +131,10 @@ main a {
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
+}
+
+main a.externo::after {
+    content: '\0020\1F517';
 }
 
 main img {
